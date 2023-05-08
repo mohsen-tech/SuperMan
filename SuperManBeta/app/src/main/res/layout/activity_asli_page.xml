@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="#ffffff"
+    android:paddingTop="15dp"
+    tools:context="info.intech.supermanbeta.asli_page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/menu_asli_page"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/ic_menu_black_24dp"
+            android:padding="10dp" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/ic_super_man" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Super"
+                    android:textColor="#0022ff"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Man"
+                    android:textColor="#fd4444"
+                    android:textSize="19sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="90dp"
+            android:text="عکسا با توجه به برنامه اسنپ فود که به انیمیت جابه جا میشوند" />
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/field_shape_asli_page">
+
+            <TextView
+                android:id="@+id/boro_place_asli_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/ic_chevron_left_black_24dp"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/name_place_asli_page"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/textView5"
+                android:background="#ffffff"
+                android:gravity="right"
+                android:hint="نام محله یا مارکت" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="1.5dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btn_city_asli_page"
+                android:layout_toStartOf="@+id/btn_city_asli_page"
+                android:background="@android:drawable/status_bar_item_background" />
+
+            <Button
+                android:id="@+id/btn_city_asli_page"
+                android:layout_width="57dp"
+                android:layout_height="55dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="1.5dp"
+                android:background="@drawable/btn_shape_city_asli_page"
+                android:onClick="btn_city_asli_page"
+                android:text="شهر"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/location_asli_page"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/location_vector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="مارکت های نزدیک من" />
+
+
+    </LinearLayout>
+</RelativeLayout>
